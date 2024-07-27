@@ -1,0 +1,623 @@
+{
+        "intents": 
+        [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies", "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"],
+         "context": [""]
+        },
+
+        {
+        "tag": "age",
+        "patterns": ["How old are you?", "What's your age?", "Can you tell me your age?"],
+        "responses": ["I'm a timeless entity.", "I don't have an age.", "Age is just a number!"],
+        "context": [""]
+        },
+
+        {
+        
+        "tag": "weather",
+        "patterns": ["What's the weather like?", "Tell me the current weather.", "How's the weather today?"],
+        "responses": ["I can't check the weather right now, but you can check a weather website for the latest updates.", "Please check your local weather service for the latest information."],
+        "context": [""]
+        },
+        {
+        "tag": "news",
+        "patterns": ["What's the latest news?", "Tell me the news.", "Any breaking news?"],
+        "responses": ["I can't provide real-time news updates, but you can check a news website for the latest information.", "Please refer to a trusted news source for the latest updates."],
+        "context": [""]
+        },
+        {
+        "tag": "joke",
+        "patterns": ["Tell me a joke", "Do you know any jokes?", "Make me laugh"],
+        "responses": ["Why don't scientists trust atoms? Because they make up everything!", "Why did the scarecrow win an award? Because he was outstanding in his field!"],
+        "context": [""]
+        },
+        {
+        "tag": "music",
+        "patterns": ["Can you play music?", "Play a song", "Can you play some music?"],
+        "responses": ["I can't play music, but you can listen to your favorite songs on a music streaming service.", "Try using a music app to play some tunes!"],
+        "context": [""]
+        },
+        {
+        "tag": "food",
+        "patterns": ["What's your favorite food?", "Do you eat?", "What do you like to eat?"],
+        "responses": ["I don't eat, but I hear pizza is a popular choice!", "As an AI, I don't eat, but I can help you find a recipe!"],
+        "context": [""]
+        },
+        {
+        "tag": "hobby",
+        "patterns": ["What are your hobbies?", "What do you do for fun?", "Do you have any hobbies?"],
+        "responses": ["I enjoy learning and helping people with their questions.", "My hobby is assisting users like you!"],
+        "context": [""]
+        },
+        {
+        "tag": "language",
+        "patterns": ["How many languages can you speak?", "Do you speak multiple languages?", "Can you talk in other languages?"],
+        "responses": ["I can understand and generate text in multiple languages.", "Yes, I can communicate in several languages."],
+        "context": [""]
+        },
+        {
+        "tag": "movie",
+        "patterns": ["What's your favorite movie?", "Do you watch movies?", "Can you recommend a movie?"],
+        "responses": ["I don't watch movies, but many people recommend 'Inception'.", "I can't watch movies, but I've heard 'The Shawshank Redemption' is great!"],
+        "context": [""]
+        },
+        {
+        "tag": "programming",
+        "patterns": ["Do you know how to code?", "Can you write code?", "What's your favorite programming language?"],
+        "responses": ["I can help with coding questions. My favorite language is Python.", "Yes, I can assist with programming. Python is a popular choice!"],
+        "context": [""]
+        },
+        {
+        "tag": "sport",
+        "patterns": ["What's your favorite sport?", "Do you play any sports?", "Can you recommend a sport to watch?"],
+        "responses": ["I don't play sports, but many people enjoy watching soccer.", "I can't play sports, but basketball is very popular!"],
+        "context": [""]
+        },
+        {
+        "tag": "capital_france",
+        "patterns": ["What is the capital of France?", "Tell me the capital of France.", "France's capital is?"],
+        "responses": ["The capital of France is Paris.", "Paris is the capital of France."],
+        "context": [""]
+        },
+        {
+        "tag": "author_mockingbird",
+        "patterns": ["Who wrote 'To Kill a Mockingbird'?", "Author of 'To Kill a Mockingbird'?", "Who is the author of 'To Kill a Mockingbird'?"],
+        "responses": ["'To Kill a Mockingbird' was written by Harper Lee.", "Harper Lee wrote 'To Kill a Mockingbird'."],
+        "context": [""]
+        },
+        {
+        "tag": "boiling_water",
+        "patterns": ["What is the boiling point of water?", "Tell me the boiling point of water.", "At what temperature does water boil?"],
+        "responses": ["The boiling point of water is 100°C or 212°F.", "Water boils at 100°C or 212°F."],
+        "context": [""]
+        },
+        {
+        "tag": "first_president",
+        "patterns": ["Who was the first president of the United States?", "Name the first president of the USA.", "First president of the US?"],
+        "responses": ["The first president of the United States was George Washington.", "George Washington was the first president of the USA."],
+        "context": [""]
+        },
+        {
+        "tag": "square_root_64",
+        "patterns": ["What is the square root of 64?", "Tell me the square root of 64.", "Square root of 64 is?"],
+        "responses": ["The square root of 64 is 8.", "8 is the square root of 64."],
+        "context": [""]
+        },
+        {
+        "tag": "programming_help",
+        "patterns": ["Can you help me with programming?", "I need help with my code", "How do I debug this?"],
+        "responses": ["Sure, I'd be happy to help with your programming questions.", "What specifically do you need help with in your code?"],
+        "context": [""]
+        },
+        {
+        "tag": "travel_recommendations",
+        "patterns": ["Can you recommend a travel destination?", "Where should I go on vacation?", "Suggest a place to visit."],
+        "responses": ["How about visiting Japan? It's beautiful!", "Paris is always a great choice for a vacation."],
+        "context": [""]
+        },
+        {
+        "tag": "book_recommendations",
+        "patterns": ["Can you recommend a book?", "What should I read next?", "Suggest a good book."],
+        "responses": ["'1984' by George Orwell is a great read.", "'To Kill a Mockingbird' by Harper Lee is a classic."],
+        "context": [""]
+        },
+        {
+        "tag": "cooking_tips",
+        "patterns": ["Can you give me some cooking tips?", "How do I cook a steak?", "Any tips for baking?"],
+        "responses": ["Make sure to let your steak rest after cooking.", "Use room temperature ingredients for better baking results."],
+        "context": [""]
+        },
+        {
+        "tag": "exercise_advice",
+        "patterns": ["Can you give me some exercise tips?", "How do I get fit?", "What's a good workout routine?"],
+        "responses": ["Consistency is key to any fitness routine.", "Don't forget to warm up before exercising."],
+        "context": [""]
+        },
+        {
+        "tag": "mental_health",
+        "patterns": ["Can you give me some mental health tips?", "How do I deal with stress?", "Any advice for anxiety?"],
+        "responses": ["Practice mindfulness and meditation to reduce stress.", "Talk to a professional if you're struggling with anxiety."],
+        "context": [""]
+        },
+        {
+        "tag": "technology_trends",
+        "patterns": ["What's the latest in technology?", "Tell me about new tech trends.", "What's new in the tech world?"],
+        "responses": ["AI and machine learning are big trends right now.", "Blockchain technology is becoming increasingly popular."],
+        "context": [""]
+        },
+        {
+        "tag": "history_facts",
+        "patterns": ["Tell me a historical fact.", "Do you know any interesting history?", "What's a cool fact about history?"],
+        "responses": ["Did you know that the Great Wall of China is over 13,000 miles long?", "The Roman Empire was one of the largest empires in history."],
+        "context": [""]
+        },
+
+        {
+        "tag": "literature",
+        "patterns": ["Who wrote 'Pride and Prejudice'?", "Author of 'Moby Dick'?", "Who is the author of '1984'?"],
+        "responses": ["'Pride and Prejudice' was written by Jane Austen.", "'Moby Dick' was written by Herman Melville.", "'1984' was written by George Orwell."],
+        "context": [""]
+        },
+        {
+        "tag": "science",
+        "patterns": ["What is the speed of light?", "Tell me about black holes.", "How does gravity work?"],
+        "responses": ["The speed of light is approximately 299,792,458 meters per second.", "Black holes are regions of spacetime exhibiting gravitational acceleration so strong that nothing can escape from it.", "Gravity is a force that attracts two bodies towards each other."],
+        "context": [""]
+        },
+        {
+        "tag": "math",
+        "patterns": ["What is the Pythagorean theorem?", "Tell me about calculus.", "What is the value of pi?"],
+        "responses": ["The Pythagorean theorem states that in a right triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides.", "Calculus is a branch of mathematics that studies continuous change.", "The value of pi is approximately 3.14159."],
+        "context": [""]
+        },
+        {
+        "tag": "geography",
+        "patterns": ["What is the capital of Italy?", "Tell me about the Sahara Desert.", "Where is the Amazon River?"],
+        "responses": ["The capital of Italy is Rome.", "The Sahara Desert is the largest hot desert in the world, located in North Africa.", "The Amazon River is located in South America."],
+        "context": [""]
+        },
+        {
+        "tag": "history",
+        "patterns": ["Who was the first emperor of China?", "Tell me about World War II.", "When was the Declaration of Independence signed?"],
+        "responses": ["The first emperor of China was Qin Shi Huang.", "World War II was a global war that lasted from 1939 to 1945.", "The Declaration of Independence was signed on July 4, 1776."],
+        "context": [""]
+        },
+        {
+        "tag": "health",
+        "patterns": ["How do I stay healthy?", "Tell me about the benefits of exercise.", "What are good dietary habits?"],
+        "responses": ["To stay healthy, it's important to eat a balanced diet, exercise regularly, and get enough sleep.", "Exercise can improve your mood, boost your energy, and promote better sleep.", "Good dietary habits include eating a variety of foods, staying hydrated, and avoiding excessive sugar and processed foods."],
+        "context": [""]
+        },
+        {
+        "tag": "technology",
+        "patterns": ["What is artificial intelligence?", "Tell me about quantum computing.", "What is the Internet of Things?"],
+        "responses": ["Artificial intelligence is the simulation of human intelligence in machines.", "Quantum computing uses quantum bits or qubits to perform computations much faster than classical computers.", "The Internet of Things (IoT) refers to the interconnectedness of everyday devices through the internet."],
+        "context": [""]
+        },
+        {
+        "tag": "programming_languages",
+        "patterns": ["Tell me about Python.", "What is JavaScript?", "How does C++ differ from C?"],
+        "responses": ["Python is a high-level, interpreted programming language known for its readability.", "JavaScript is a programming language commonly used in web development to create interactive effects within web browsers.", "C++ is an extension of C that includes object-oriented features."],
+        "context": [""]
+        },
+        {
+        "tag": "movies",
+        "patterns": ["What are some popular movies?", "Tell me about 'The Godfather'.", "Who directed 'Inception'?"],
+        "responses": ["Some popular movies include 'The Shawshank Redemption', 'The Godfather', and 'The Dark Knight'.", "'The Godfather' is a 1972 film directed by Francis Ford Coppola.", "'Inception' was directed by Christopher Nolan."],
+        "context": [""]
+        },
+        {
+        "tag": "music",
+        "patterns": ["Who is Beethoven?", "Tell me about The Beatles.", "What is jazz music?"],
+        "responses": ["Ludwig van Beethoven was a German composer and pianist.", "The Beatles were an English rock band formed in Liverpool in 1960.", "Jazz is a music genre that originated in the African-American communities of New Orleans, United States."],
+        "context": [""]
+        },
+        {
+        "tag": "art",
+        "patterns": ["Who painted the Mona Lisa?", "Tell me about Vincent van Gogh.", "What is the Renaissance?"],
+        "responses": ["The Mona Lisa was painted by Leonardo da Vinci.", "Vincent van Gogh was a Dutch post-impressionist painter.", "The Renaissance was a period in European history marking the transition from the Middle Ages to modernity and covering the 15th and 16th centuries."],
+        "context": [""]
+        },
+        {
+        "tag": "books",
+        "patterns": ["Who wrote 'The Catcher in the Rye'?", "Tell me about 'Moby Dick'.", "What is '1984' about?"],
+        "responses": ["'The Catcher in the Rye' was written by J.D. Salinger.", "'Moby Dick' is a novel by Herman Melville about the voyage of the whaling ship Pequod.", "'1984' is a dystopian novel by George Orwell about a totalitarian regime."],
+        "context": [""]
+        },
+        {
+        "tag": "space",
+        "patterns": ["What is the Milky Way?", "Tell me about black holes.", "How big is the universe?"],
+        "responses": ["The Milky Way is the galaxy that contains our Solar System.", "Black holes are regions of spacetime where gravity is so strong that nothing can escape from it.", "The universe is vast and its exact size is unknown, but it is constantly expanding."],
+        "context": [""]
+        },
+        {
+        "tag": "animals",
+        "patterns": ["What is the largest mammal?", "Tell me about the cheetah.", "How do birds fly?"],
+        "responses": ["The largest mammal is the blue whale.", "The cheetah is the fastest land animal, capable of reaching speeds up to 70 mph.", "Birds fly using their wings, which are adapted to produce lift and reduce drag."],
+        "context": [""]
+        },
+        {
+        "tag": "plants",
+        "patterns": ["What is photosynthesis?", "Tell me about the oak tree.", "How do plants grow?"],
+        "responses": ["Photosynthesis is the process by which green plants use sunlight to synthesize foods from carbon dioxide and water.", "The oak tree is a common type of tree known for its strength and longevity.", "Plants grow through a process of cell division and enlargement, absorbing nutrients from the soil and energy from the sun."],
+        "context": [""]
+        },
+        {
+        "tag": "economics",
+        "patterns": ["What is inflation?", "Tell me about the stock market.", "How does supply and demand work?"],
+        "responses": ["Inflation is the rate at which the general level of prices for goods and services is rising.", "The stock market is a collection of markets where stocks (shares of ownership in businesses) are bought and sold.", "Supply and demand is an economic model that determines the price in a market."],
+        "context": [""]
+        },
+        {
+        "tag": "finance",
+        "patterns": ["What is a mortgage?", "Tell me about savings accounts.", "How do credit cards work?"],
+        "responses": ["A mortgage is a loan used to purchase real estate, where the property serves as collateral.", "Savings accounts are bank accounts that earn interest on the money deposited.", "Credit cards allow you to borrow money up to a certain limit to pay for goods and services, which you pay back later with interest."],
+        "context": [""]
+        },
+        {
+        "tag": "business",
+        "patterns": ["What is a startup?", "Tell me about entrepreneurship.", "How do businesses make money?"],
+        "responses": ["A startup is a company in the early stages of development, typically characterized by high growth potential.", "Entrepreneurship is the process of starting and running a new business.", "Businesses make money by selling goods or services for more than it costs to produce them."],
+        "context": [""]
+        },
+        {
+        "tag": "travel",
+        "patterns": ["What are the top tourist destinations?", "Tell me about traveling to Japan.", "How do I plan a trip?"],
+        "responses": ["Top tourist destinations include Paris, New York, and Tokyo.", "Traveling to Japan offers a mix of traditional and modern experiences, from temples and shrines to bustling cities.", "To plan a trip, decide on your destination, book your travel and accommodation, and create an itinerary."],
+        "context": [""]
+        },
+        {
+        "tag": "education",
+        "patterns": ["What are the top universities?", "Tell me about online learning.", "How do I choose a college?"],
+        "responses": ["Top universities include Harvard, Stanford, and MIT.", "Online learning allows students to take courses and earn degrees through the internet.", "To choose a college, consider factors like location, programs offered, and cost."],
+        "context": [""]
+        },
+        {
+        "tag": "jobs",
+        "patterns": ["What are the highest paying jobs?", "Tell me about remote work.", "How do I write a resume?"],
+        "responses": ["Highest paying jobs often include roles in medicine, law, and technology.", "Remote work allows employees to work from home or another location outside the office.", "To write a resume, include your contact information, work experience, education, and relevant skills."],
+        "context": [""]
+        },
+        {
+        "tag": "relationships",
+        "patterns": ["How do I build strong relationships?", "Tell me about effective communication.", "What are some relationship tips?"],
+        "responses": ["Building strong relationships involves trust, communication, and mutual respect.", "Effective communication is clear, concise, and considerate of the other person's perspective.", "Some relationship tips include being honest, supportive, and willing to compromise."],
+        "context": [""]
+        },
+        {
+        "tag": "parenting",
+        "patterns": ["What are some parenting tips?", "Tell me about child development.", "How do I handle tantrums?"],
+        "responses": ["Parenting tips include being consistent, patient, and showing unconditional love.", "Child development refers to the physical, cognitive, and emotional growth of a child.", "To handle tantrums, stay calm, be patient, and try to understand the underlying cause."],
+        "context": [""]
+        },
+        {
+        "tag": "philosophy",
+        "patterns": ["What is existentialism?", "Tell me about Plato.", "What are some famous philosophical quotes?"],
+        "responses": ["Existentialism is a philosophy that emphasizes individual existence, freedom, and choice.", "Plato was an ancient Greek philosopher who founded the Academy in Athens.", "Famous philosophical quotes include 'I think, therefore I am' by Descartes."],
+        "context": [""]
+        },
+        {
+        "tag": "psychology",
+        "patterns": ["What is cognitive dissonance?", "Tell me about Freud.", "What are some common mental health disorders?"],
+        "responses": ["Cognitive dissonance is the mental discomfort experienced by a person who holds two or more contradictory beliefs.", "Sigmund Freud was an Austrian neurologist and the founder of psychoanalysis.", "Common mental health disorders include depression, anxiety, and bipolar disorder."],
+        "context": [""]
+        },
+        {
+        "tag": "sports",
+        "patterns": ["What are the rules of soccer?", "Tell me about the Olympics.", "Who is the greatest basketball player?"],
+        "responses": ["Soccer is played with two teams of eleven players, and the objective is to score goals by getting the ball into the opposing team's net.", "The Olympics is a major international multi-sport event held every four years.", "Many consider Michael Jordan to be the greatest basketball player of all time."],
+        "context": [""]
+        },
+        {
+        "tag": "technology",
+        "patterns": ["What is blockchain?", "Tell me about 5G.", "What are the benefits of AI?"],
+        "responses": ["Blockchain is a distributed ledger technology that allows data to be stored globally on thousands of servers.", "5G is the fifth generation of mobile networks, offering faster speeds and more reliable connections.", "The benefits of AI include automation of tasks, improved efficiency, and new insights from data analysis."],
+        "context": [""]
+        },
+        {
+        "tag": "weather",
+        "patterns": ["What causes thunderstorms?", "Tell me about hurricanes.", "How is a rainbow formed?"],
+        "responses": ["Thunderstorms are caused by the rapid upward movement of warm, moist air.", "Hurricanes are powerful tropical storms with strong winds and heavy rain.", "A rainbow is formed by the refraction, dispersion, and reflection of sunlight in water droplets."],
+        "context": [""]
+        },
+        {
+        "tag": "geology",
+        "patterns": ["What is a volcano?", "Tell me about earthquakes.", "How are mountains formed?"],
+        "responses": ["A volcano is an opening in the Earth's crust that allows molten rock, ash, and gases to escape.", "Earthquakes are caused by the sudden release of energy in the Earth's crust.", "Mountains are formed through tectonic forces or volcanism."],
+        "context": [""]
+        },
+        {
+        "tag": "astronomy",
+        "patterns": ["What is a galaxy?", "Tell me about the solar system.", "How do stars form?"],
+        "responses": ["A galaxy is a system of stars, stellar remnants, interstellar gas, dust, and dark matter.", "The solar system consists of the Sun and the objects that orbit it, including planets, moons, and asteroids.", "Stars form from clouds of dust and gas that collapse under gravity."],
+        "context": [""]
+        },
+        {
+        "tag": "medicine",
+        "patterns": ["What is a vaccine?", "Tell me about antibiotics.", "How does the immune system work?"],
+        "responses": ["A vaccine is a biological preparation that provides active acquired immunity to a particular disease.", "Antibiotics are medicines that fight bacterial infections.", "The immune system protects the body from harmful substances, germs, and cell changes."],
+        "context": [""]
+        },
+        {
+        "tag": "biology",
+        "patterns": ["What is DNA?", "Tell me about photosynthesis.", "How do cells divide?"],
+        "responses": ["DNA is a molecule that carries genetic instructions used in growth, development, functioning, and reproduction.", "Photosynthesis is the process by which green plants use sunlight to synthesize foods.", "Cells divide through a process called mitosis."],
+        "context": [""]
+        },
+        {
+        "tag": "chemistry",
+        "patterns": ["What is an atom?", "Tell me about chemical reactions.", "What is the periodic table?"],
+        "responses": ["An atom is the smallest unit of matter that retains the properties of an element.", "A chemical reaction is a process that leads to the transformation of one set of chemical substances to another.", "The periodic table is a tabular display of the chemical elements."],
+        "context": [""]
+        },
+        {
+        "tag": "physics",
+        "patterns": ["What is Newton's first law?", "Tell me about quantum mechanics.", "How does electricity work?"],
+        "responses": ["Newton's first law states that an object at rest stays at rest and an object in motion stays in motion unless acted upon by an external force.", "Quantum mechanics is a fundamental theory in physics describing the properties of nature on an atomic scale.", "Electricity is the set of physical phenomena associated with the presence and motion of electric charge."],
+        "context": [""]
+        },
+        {
+        "tag": "programming",
+        "patterns": ["What is a variable?", "Tell me about loops.", "How do functions work?"],
+        "responses": ["A variable is a storage location paired with an associated symbolic name, which contains some known or unknown quantity of information.", "Loops are used in programming to repeat a block of code as long as a specified condition is met.", "Functions are reusable blocks of code that perform a specific task."],
+        "context": [""]
+        },
+        {
+        "tag": "engineering",
+        "patterns": ["What is civil engineering?", "Tell me about mechanical engineering.", "How do electrical circuits work?"],
+        "responses": ["Civil engineering deals with the design, construction, and maintenance of the physical and naturally built environment.", "Mechanical engineering involves the design, analysis, and manufacturing of mechanical systems.", "Electrical circuits are paths through which electricity flows, consisting of a power source, conductors, and a load."],
+        "context": [""]
+        },
+        {
+        "tag": "art",
+        "patterns": ["What is impressionism?", "Tell me about Picasso.", "How do you define abstract art?"],
+        "responses": ["Impressionism is a 19th-century art movement characterized by small, thin brush strokes and an emphasis on light.", "Picasso was a Spanish painter, sculptor, and one of the most influential artists of the 20th century.", "Abstract art uses visual language of shape, form, color, and line to create a composition independent of visual references in the world."],
+        "context": [""]
+        },
+        {
+        "tag": "music",
+        "patterns": ["What is classical music?", "Tell me about Beethoven.", "How do you define jazz?"],
+        "responses": ["Classical music is art music produced or rooted in the traditions of Western culture.", "Beethoven was a German composer and pianist, a crucial figure in the transition between the Classical and Romantic eras in Western music.", "Jazz is a music genre that originated in the African-American communities of New Orleans, known for its swing and blue notes."],
+        "context": [""]
+        },
+        {
+        "tag": "literature",
+        "patterns": ["What is a novel?", "Tell me about Shakespeare.", "How do you define poetry?"],
+        "responses": ["A novel is a relatively long work of narrative fiction, typically published as a book.", "Shakespeare was an English playwright, poet, and actor, widely regarded as one of the greatest writers in the English language.", "Poetry is a form of literature that uses aesthetic and rhythmic qualities of language to evoke meanings."],
+        "context": [""]
+        },
+        {
+        "tag": "movies",
+        "patterns": ["What is a blockbuster?", "Tell me about Spielberg.", "How do you define film noir?"],
+        "responses": ["A blockbuster is a highly popular and financially successful film.", "Steven Spielberg is an American filmmaker known for his work in films like 'Jaws', 'E.T.', and 'Jurassic Park'.", "Film noir is a cinematic term used primarily to describe stylish Hollywood crime dramas."],
+        "context": [""]
+        },
+        {
+        "tag": "games",
+        "patterns": ["What is a video game?", "Tell me about chess.", "How do you define esports?"],
+        "responses": ["A video game is an electronic game that involves interaction with a user interface to generate visual feedback.", "Chess is a two-player strategy board game played on a checkered board with 64 squares.", "Esports is a form of competition using video games, often organized as multiplayer competitions."],
+        "context": [""]
+        },
+        {
+        "tag": "fashion",
+        "patterns": ["What is haute couture?", "Tell me about Chanel.", "How do you define streetwear?"],
+        "responses": ["Haute couture is the creation of exclusive, custom-fitted high-end fashion design.", "Chanel is a French fashion house founded by Coco Chanel, known for its timeless designs.", "Streetwear is a style of casual clothing which became global in the 1990s, rooted in California and skate culture."],
+        "context": [""]
+        },
+        {
+        "tag": "food",
+        "patterns": ["What is sushi?", "Tell me about Italian cuisine.", "How do you define veganism?"],
+        "responses": ["Sushi is a Japanese dish consisting of vinegared rice accompanied by a variety of ingredients, such as seafood, vegetables, and occasionally tropical fruits.", "Italian cuisine is characterized by its simplicity, with many dishes having only two to four main ingredients.", "Veganism is the practice of abstaining from the use of animal products, particularly in diet."],
+        "context": [""]
+        },
+        {
+        "tag": "drinks",
+        "patterns": ["What is coffee?", "Tell me about wine.", "How do you define cocktails?"],
+        "responses": ["Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.", "Wine is an alcoholic drink typically made from fermented grapes.", "Cocktails are mixed drinks typically made with a combination of spirits, mixers, and other flavorings."],
+        "context": [""]
+        },
+        {
+        "tag": "languages",
+        "patterns": ["What is Spanish?", "Tell me about Mandarin.", "How do you define bilingualism?"],
+        "responses": ["Spanish is a Romance language that originated in the Iberian Peninsula and today has over 480 million native speakers.", "Mandarin is a group of Sinitic (Chinese) languages spoken across most of northern and southwestern China.", "Bilingualism is the ability to speak two languages fluently."],
+        "context": [""]
+        },
+        {
+        "tag": "culture",
+        "patterns": ["What is a tradition?", "Tell me about the Japanese tea ceremony.", "How do you define cultural diversity?"],
+        "responses": ["A tradition is a belief or behavior passed down within a group or society with symbolic meaning or special significance.", "The Japanese tea ceremony is a ritualistic preparation and consumption of matcha (powdered green tea).", "Cultural diversity refers to the existence of a variety of cultural or ethnic groups within a society."],
+        "context": [""]
+        },
+        {
+        "tag": "nature",
+        "patterns": ["What is an ecosystem?", "Tell me about rainforests.", "How do you define biodiversity?"],
+        "responses": ["An ecosystem is a community of living organisms in conjunction with the nonliving components of their environment.", "Rainforests are dense forests found in tropical areas with consistently heavy rainfall.", "Biodiversity is the variety and variability of life on Earth."],
+        "context": [""]
+        },
+        {
+        "tag": "gardening",
+        "patterns": ["What is horticulture?", "Tell me about composting.", "How do you define hydroponics?"],
+        "responses": ["Horticulture is the art or practice of garden cultivation and management.", "Composting is the process of recycling organic waste into valuable fertilizer.", "Hydroponics is a method of growing plants without soil by using mineral nutrient solutions in an aqueous solvent."],
+        "context": [""]
+        },
+        {
+        "tag": "fitness",
+        "patterns": ["What is cardio exercise?", "Tell me about strength training.", "How do you define yoga?"],
+        "responses": ["Cardio exercise is any exercise that raises your heart rate.", "Strength training is a type of physical exercise specializing in the use of resistance to induce muscular contraction.", "Yoga is a group of physical, mental, and spiritual practices or disciplines which originated in ancient India."],
+        "context": [""]
+        },
+        {
+        "tag": "hobbies",
+        "patterns": ["What is knitting?", "Tell me about photography.", "How do you define birdwatching?"],
+        "responses": ["Knitting is a method by which yarn is manipulated to create a textile or fabric.", "Photography is the art, application, and practice of creating durable images by recording light.", "Birdwatching is the practice of observing birds in their natural environment as a hobby."],
+        "context": [""]
+        },
+        {
+        "tag": "diy",
+        "patterns": ["What is woodworking?", "Tell me about home brewing.", "How do you define upcycling?"],
+        "responses": ["Woodworking is the activity or skill of making items from wood.", "Home brewing is the brewing of beer, mead, and ciders on a small scale for personal, non-commercial purposes.", "Upcycling is the process of transforming by-products, waste materials, or unwanted products into new materials or products of better quality."],
+        "context": [""]
+        },
+        {
+        "tag": "pets",
+        "patterns": ["What is a good dog breed?", "Tell me about cat care.", "How do you define pet adoption?"],
+        "responses": ["Good dog breeds for families include Labrador Retrievers, Golden Retrievers, and Beagles.", "Cat care involves providing proper nutrition, regular vet check-ups, and a stimulating environment.", "Pet adoption is the process of taking responsibility for a pet that a previous owner has abandoned or released to a shelter."],
+        "context": [""]
+        },
+        {
+        "tag": "home",
+        "patterns": ["What is interior design?", "Tell me about home automation.", "How do you define Feng Shui?"],
+        "responses": ["Interior design is the art and science of enhancing the interior of a building to achieve a healthier and more aesthetically pleasing environment.", "Home automation involves the control of home appliances using a smart home system.", "Feng Shui is a traditional practice originating from ancient China, which claims to use energy forces to harmonize individuals with their surrounding environment."],
+        "context": [""]
+        },
+        {
+        "tag": "automotive",
+        "patterns": ["What is a hybrid car?", "Tell me about electric vehicles.", "How do you define car maintenance?"],
+        "responses": ["A hybrid car uses more than one form of onboard energy to achieve propulsion.", "Electric vehicles (EVs) are vehicles that are propelled by electric motors, using energy stored in rechargeable batteries.", "Car maintenance involves regular check-ups, oil changes, tire rotations, and other upkeep to ensure a vehicle runs smoothly."],
+        "context": [""]
+        },
+        {
+        "tag": "photography",
+        "patterns": ["What is aperture?", "Tell me about shutter speed.", "How do you define ISO in photography?"],
+        "responses": ["Aperture is a hole within a lens through which light travels into the camera body.", "Shutter speed is the length of time a camera's sensor is exposed to light.", "ISO in photography measures the sensitivity of the image sensor."],
+        "context": [""]
+        },
+        {
+        "tag": "cooking",
+        "patterns": ["What is a recipe?", "Tell me about baking.", "How do you define grilling?"],
+        "responses": ["A recipe is a set of instructions for preparing a particular dish, including a list of the ingredients required.", "Baking is a method of cooking food that uses prolonged dry heat, normally in an oven.", "Grilling is a form of cooking that involves dry heat applied to the surface of food, commonly from above or below."],
+        "context": [""]
+        },
+        {
+        "tag": "crafts",
+        "patterns": ["What is scrapbooking?", "Tell me about sewing.", "How do you define pottery?"],
+        "responses": ["Scrapbooking is a method of preserving, presenting, and arranging personal and family history in the form of a book.", "Sewing is the craft of fastening or attaching objects using stitches made with a needle and thread.", "Pottery is the process and the products of forming vessels and other objects with clay and other ceramic materials."],
+        "context": [""]
+        },
+        {
+        "tag": "furniture",
+        "patterns": ["What is a couch?", "Tell me about ergonomic chairs.", "How do you define modular furniture?"],
+        "responses": ["A couch is a piece of furniture for seating multiple people.", "Ergonomic chairs are designed to provide comfort and support, reducing the risk of back pain and other issues.", "Modular furniture is furniture that can be customized and rearranged to fit different spaces and needs."],
+        "context": [""]
+        },
+        {
+        "tag": "travel",
+        "patterns": ["What is a tourist?", "Tell me about adventure travel.", "How do you define a road trip?"],
+        "responses": ["A tourist is a person who travels to a place for pleasure.", "Adventure travel is a type of tourism involving exploration or travel with a certain degree of risk.", "A road trip is a long-distance journey made by car."],
+        "context": [""]
+        },
+        {
+        "tag": "events",
+        "patterns": ["What is a wedding?", "Tell me about corporate events.", "How do you define a festival?"],
+        "responses": ["A wedding is a ceremony where two people are united in marriage.", "Corporate events are gatherings organized by a business for employees, clients, or stakeholders.", "A festival is an event celebrated by a community, often centering on some characteristic aspect of that community."],
+        "context": [""]
+        },
+        {
+        "tag": "finance",
+        "patterns": ["What is a savings account?", "Tell me about investing.", "How do you define a budget?"],
+        "responses": ["A savings account is a bank account that earns interest.", "Investing involves committing money to an endeavor with the expectation of obtaining an additional income or profit.", "A budget is a financial plan for a defined period, often one year."],
+        "context": [""]
+        },
+        {
+        "tag": "politics",
+        "patterns": ["What is democracy?", "Tell me about the United Nations.", "How do you define socialism?"],
+        "responses": ["Democracy is a system of government where the citizens exercise power by voting.", "The United Nations is an international organization founded in 1945 to promote peace, security, and cooperation.", "Socialism is a political and economic theory of social organization which advocates that the means of production, distribution, and exchange should be owned or regulated by the community as a whole."],
+        "context": [""]
+        },
+        {
+        "tag": "environment",
+        "patterns": ["What is climate change?", "Tell me about recycling.", "How do you define renewable energy?"],
+        "responses": ["Climate change refers to long-term changes in temperature, precipitation, and other atmospheric conditions on Earth.", "Recycling is the process of converting waste materials into new materials and objects.", "Renewable energy is energy from sources that are naturally replenishing, such as solar, wind, and hydro power."],
+        "context": [""]
+        },
+        {
+        "tag": "history",
+        "patterns": ["What is the Renaissance?", "Tell me about World War II.", "How do you define ancient civilizations?"],
+        "responses": ["The Renaissance was a period in European history marking the transition from the Middle Ages to modernity.", "World War II was a global war that lasted from 1939 to 1945.", "Ancient civilizations refer to early complex societies that developed urban centers, written language, and other advanced features."],
+        "context": [""]
+        },
+        {
+        "tag": "education",
+        "patterns": ["What is online learning?", "Tell me about homeschooling.", "How do you define a curriculum?"],
+        "responses": ["Online learning is education that takes place over the Internet.", "Homeschooling is the education of children at home by their parents.", "A curriculum is the subjects comprising a course of study in a school or college."],
+        "context": [""]
+        },
+        {
+        "tag": "health",
+        "patterns": ["What is a balanced diet?", "Tell me about mental health.", "How do you define exercise?"],
+        "responses": ["A balanced diet provides all the essential nutrients in the right proportions.", "Mental health includes our emotional, psychological, and social well-being.", "Exercise is any bodily activity that enhances or maintains physical fitness and overall health."],
+        "context": [""]
+        },
+        {
+        "tag": "law",
+        "patterns": ["What is a contract?", "Tell me about criminal law.", "How do you define civil rights?"],
+        "responses": ["A contract is a legally binding agreement between two or more parties.", "Criminal law is the body of law that relates to crime.", "Civil rights are the rights of citizens to political and social freedom and equality."],
+        "context": [""]
+        },
+        {
+        "tag": "religion",
+        "patterns": ["What is Christianity?", "Tell me about Islam.", "How do you define Buddhism?"],
+        "responses": ["Christianity is a monotheistic religion based on the life and teachings of Jesus Christ.", "Islam is a monotheistic religion teaching that there is only one God and that Muhammad is a messenger of God.", "Buddhism is a spiritual tradition that focuses on personal spiritual development and the attainment of a deep insight into the true nature of life."],
+        "context": [""]
+        },
+        {
+        "tag": "news",
+        "patterns": ["What is a headline?", "Tell me about journalism.", "How do you define fake news?"],
+        "responses": ["A headline is the title of a news article, designed to grab attention.", "Journalism is the activity of gathering, assessing, creating, and presenting news and information.", "Fake news is false or misleading information presented as news."],
+        "context": [""]
+        },
+        {
+        "tag": "finance",
+        "patterns": ["What is investing?", "Tell me about cryptocurrency.", "How do you define a mortgage?"],
+        "responses": ["Investing involves committing money to an endeavor with the expectation of obtaining an additional income or profit.", "Cryptocurrency is a digital or virtual currency that uses cryptography for security.", "A mortgage is a loan used to purchase a home, where the property serves as collateral."],
+        "context": [""]
+        },
+        {
+        "tag": "travel",
+        "patterns": ["What is a travel visa?", "Tell me about backpacking.", "How do you define ecotourism?"],
+        "responses": ["A travel visa is an official document that allows the bearer to legally enter a foreign country.", "Backpacking is a form of low-cost, independent travel, often staying in hostels and carrying all necessary belongings in a backpack.", "Ecotourism is responsible travel to natural areas that conserves the environment and improves the well-being of local people."],
+        "context": [""]
+        },
+        {
+        "tag": "careers",
+        "patterns": ["What is a resume?", "Tell me about interviews.", "How do you define networking?"],
+        "responses": ["A resume is a document used by individuals to present their background, skills, and accomplishments.", "An interview is a conversation where questions are asked and answers are given, often for a job or school application.", "Networking is the process of interacting with others to exchange information and develop professional or social contacts."],
+        "context": [""]
+        },
+        {
+        "tag": "marketing",
+        "patterns": ["What is social media marketing?", "Tell me about branding.", "How do you define content marketing?"],
+        "responses": ["Social media marketing is the use of social media platforms to connect with your audience to build your brand, increase sales, and drive website traffic.", "Branding is the process of creating a unique name and image for a product in the consumer's mind.", "Content marketing involves creating and sharing valuable free content to attract and convert prospects into customers."],
+        "context": [""]
+        }
+        
+
+
+
+
+
+
+]
+}
